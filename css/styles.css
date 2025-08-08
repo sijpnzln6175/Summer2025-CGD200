@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+main > div {
+    ul {
+        list-style: none;
+    }
+}
+
+/* Google Fonts */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header > .navbar,
+footer, 
+p {
+    font-family: 'Montserrat', sans-serif;
+}

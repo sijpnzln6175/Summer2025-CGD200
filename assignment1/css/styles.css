@@ -1,0 +1,127 @@
+* {
+    /* padding: 0;
+    margin: 0;
+    box-sizing: border-box; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+body {
+    background-image: linear-gradient(black,#06202B, #077A7D, #7AE2CF, #077A7D, #06202B, black);
+    border: 3px solid #F5EEDD;
+    margin: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    max-width: 1200px;
+}
+
+header > div {
+    border-bottom: 3px solid #F5EEDD;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+
+    img {
+        width: 45px;
+        border: 0;
+    }
+
+    a {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    a:hover {
+        transform: scale(1.05);
+        transition: 0.5s;
+        color: goldenrod
+    }
+}
+
+main {
+    margin: auto;
+    max-width: 650px;
+
+    p {
+        text-align: justify;
+        line-height: 1.15em;
+    }
+
+    a:hover {
+        color: goldenrod;
+        transition: 0.5s;
+        font-weight: 400;
+        font-size: 1.5em;
+    }
+
+    li {
+        line-height: 1.5em;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    p {
+        transition: 0.5s;
+    }
+    
+    p:hover {
+        color: black;
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+}
+
+footer > div {
+    border-top: 3px solid #F5EEDD;
+}
+
+div {
+    padding: 15px;
+    text-align: center;
+    color: #F5EEDD;
+}
+
+a {
+    text-decoration: none;
+    color: #F5EEDD;
+}
+
+
+img {
+    border: 5px solid #F5EEDD;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: 0.5s;
+}
+
+/* Fonts */
+
+.marcellus-sc-semibold {
+  font-family: "Marcellus SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.playfair-display-semibold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lora-semibold {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.raleway-regular {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -1,0 +1,313 @@
+/* Reusable Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.red {
+    color:#e50914;
+}
+
+/* Targetted Styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header > div.navbar {
+    height: 75px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+
+    nav {
+        margin: auto 15px auto auto;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 0.3rem 0.75rem;
+        font-weight: 600;
+        border-radius: 10px;
+        font-family: 'Inter', sans-serif;
+        background-color: #1e1e1e;
+        color: #ffffff;
+        border: 2px solid transparent;
+        margin: 0.3rem;
+        transition: 0.5s;
+    }
+
+    .top-1 { 
+        background-color: #e50914; 
+        color: #fff; 
+    }
+
+    .top-2 { 
+        border-color: #E50914; 
+        color: #E50914; 
+        background-color: transparent; 
+    }
+
+    .top-3 { 
+        border-color: #aaaaaa; 
+        color: #aaaaaa; 
+        background-color: transparent; 
+    }
+
+    .top-4 { 
+        border-color: #666666; 
+        color: #888888; 
+        background-color: transparent; 
+    }
+
+    .top-5 { 
+        border-color: #444444; 
+        color: #666666; 
+        background-color: transparent; 
+    }
+    
+    a {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .top-1:hover, .top-2:hover, .top-3:hover, .top-4:hover, .top-5:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+        color: #F5C518;
+    }
+}
+
+header > div.navbar > a:first-child {
+    font-weight: 700;
+    font-size: 1.75em;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #d38600, #F5C518);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
+}
+
+main > #welcome-banner {
+    color: #ffffff;
+    max-width: 1000px;
+    margin: -15px auto 0;
+    display: flex;
+    padding: 0 50px;
+    /* background: radial-gradient(ellipse, #a5050d -50%, black 70%); */
+
+    div:first-child{
+        margin: auto 0 5px;
+    }
+
+    div:last-child {
+        width: 350px;
+        
+        img {
+            width: inherit;
+            transition: 0.5s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            transition: 0.5s;
+        }
+    }
+
+    h1 {
+        margin: 0.7em 0;
+        text-transform: uppercase;
+        font-size: 2.9em;
+        
+        background: linear-gradient(to right, #d38600, #F5C518);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: justify;
+        letter-spacing: 0.05em;
+    }
+}
+
+#welcome-banner {
+    scroll-margin-top: 250px;
+}
+
+#top-one, #top-two, #top-three, #top-four, #top-five {
+  scroll-margin-top: 110px;
+}
+
+.preview-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0px;
+  /* padding: 0px 0px 40px; */
+  max-width: 1200px;
+  margin: auto;
+  background: radial-gradient(ellipse at bottom, #a5050d 0%, black 70%);
+}
+
+.p-card {
+  width: 18%;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  mask-image: url('./../images/number1.png');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.p-card:nth-child(2) {
+  mask-image: url('./../images/number2.png');
+}
+
+.p-card:nth-child(3) {
+  mask-image: url('./../images/number3.png');
+}
+
+.p-card:nth-child(4) {
+  mask-image: url('./../images/number4.png');
+}
+
+.p-card:nth-child(5) {
+  mask-image: url('./../images/number5.png');
+}
+
+.p-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.1);
+}
+
+.p-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1px);
+}
+
+
+main .card {
+    display: flex;
+    max-width: 1000px;
+    background: linear-gradient(to bottom right, #000000, #000000, #000000, #0a0202, #190000, #300103, #6e050b, #a5050d);
+    padding: 1.5rem;
+    margin: 175px auto 185px;
+    border-radius: 7px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    gap: 30px;
+
+    div.poster {
+        width: 100%;
+        max-width: 450px;
+        height: 500px;
+        border-radius: 7px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    div.info {
+        max-width: 670px;
+        text-align: left;
+        color: #ffffff;
+        
+        h2 {
+            color: #F5C518;
+            font-weight: 700;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        h2:first-child {
+            text-align: end;
+        }
+
+        h2:nth-child(2) {
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #d38600, #F5C518);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none;
+        }
+
+        .two-columns {
+            display: flex;
+            text-align: left;
+            margin-top: 20px;
+            gap: 10px;
+
+            .col {
+                width: 50%;
+                box-sizing: border-box; 
+            }
+        }
+
+        .label {
+            color:#F5C518;
+            font-weight: 700;
+            text-transform: uppercase;        
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        p {
+            font-size: 0.975em;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    color: #ffffff;
+}
+
+footer div {
+    height: 50px;
+    background-color: #121212;
+    margin: auto;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Google Fonts */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header > .navbar,
+footer, 
+p {
+    font-family: 'Montserrat', sans-serif;
+}
