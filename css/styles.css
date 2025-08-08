@@ -33,7 +33,7 @@ main {
         justify-content: center;
 
         .card {
-            border: 2px solid #e4e4e4;
+            border: 1px solid #e4e4e4;
             border-radius: 5px;
             width: 400px;
             padding: 10px 10px 20px;
@@ -78,4 +78,5 @@ header > .navbar,
 footer, 
 p {
     font-family: 'Montserrat', sans-serif;
+
 }
