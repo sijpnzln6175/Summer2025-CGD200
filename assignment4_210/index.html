@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chromabreeze: The Smart Umbrella</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <section id="hero" class="dark-background">
+            <div class="hero-content">
+                <h1>ChromaBreeze: Weathering In Style.</h1>
+
+                <div class="interactive-preview">
+                    <label for="color-slider">Experience the Chroma-Web:</label>
+                    <input type="range" id="color-slider" min="0" max="100" value="50">
+                    <div id="umbrella-mockup">
+                        <img id="chroma-image" src="images/umbrella.png" alt="Chromabreeze Smart Umbrella">
+                    </div>
+                </div>
+
+                <a href="/assignment2_210/index.html" class="cta-button">Pre-Order Yours & Save 20%</a>
+                <p class="small-print">Limited stock available for the first production run.</p>
+            </div>
+            <div class="hero-bg-image"></div> 
+        </section>
+
+        <script>
+            const slider = document.getElementById('color-slider');
+            const chromaImage = document.getElementById('chroma-image');
+
+            // 1. Define the function that applies the filter
+            function updateUmbrellaColor() {
+                // The slider value ranges from 0 to 360, which corresponds perfectly 
+                // to degrees in the Hue Rotate filter (0deg = Red, 120deg = Green, 240deg = Blue)
+                const hueValue = slider.value; 
+                
+                // Apply the hue-rotate filter using the slider's current value
+                chromaImage.style.filter = `hue-rotate(${hueValue}deg)`;
+            }
+
+            // 2. Attach the function to the slider's input event
+            slider.addEventListener('input', updateUmbrellaColor);
+
+            // 3. (Optional) Run once on load to set the initial color
+            updateUmbrellaColor();
+        </script>
+    </body>
+</html>
